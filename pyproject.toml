@@ -1,0 +1,14 @@
+[project]
+name = "heater"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "adafruit-blinka>=8.66.2",
+    "adafruit-circuitpython-sht31d>=2.3.29",
+    "adafruit-python-shell>=1.11.0",
+    "gpiod>=2.4.0",
+    "rpi-lgpio>=0.6",
+    "swig>=4.3.1.post0",
+]

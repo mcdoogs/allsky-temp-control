@@ -1,0 +1,16 @@
+[Unit]
+Description=Allsky Temperature Control
+After=network.target
+
+[Service]
+Type=simple
+User=mcdoogs
+WorkingDirectory=/home/mcdoogs/allsky-temp-control
+ExecStart=/home/mcdoogs/.local/bin/uv run --python python3 temp-control.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
